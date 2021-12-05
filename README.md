@@ -6,7 +6,13 @@ INSTRUCTIONS TO RUN PROGRAM:
    java -cp ghanashri_project.jar MainClass <INPUT FILENAME>
 3. Sample Input:
    java -cp ghanashri_project.jar MainClass "Input1 - Sheet1.csv"
-
+   
+   
+*************
+  Output Snapshots
+1. With Input File 1
+   
+   <img width="1440" alt="Screen Shot 2021-12-05 at 2 58 42 PM" src="https://user-images.githubusercontent.com/39545809/144767475-ecfe675f-7367-4ccb-bf9a-9258e04e618b.png">
 
 
 ****************
