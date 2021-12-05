@@ -23,6 +23,11 @@ INSTRUCTIONS TO RUN PROGRAM:
    
    
    <img width="1440" alt="Screen Shot 2021-12-05 at 2 58 42 PM" src="https://user-images.githubusercontent.com/39545809/144767475-ecfe675f-7367-4ccb-bf9a-9258e04e618b.png">
+   
+Class Diagram for the individual project
+   
+   ![IndividualProjectClassDiagram](https://user-images.githubusercontent.com/39545809/144769341-79cb669d-fcbb-4848-9f54-f4f4ee5ff2ef.jpg)
+
 
 
 ****************
