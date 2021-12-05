@@ -40,7 +40,7 @@ public class Commons {
 
 
     public static ItemList loadItems(String inventoryFilename, ItemCategory itemCategory) {
-        System.out.println("Reading File:" + inventoryFilename);
+        System.out.println("Reading Order Input File:" + inventoryFilename);
 
         ItemList itemList = new ItemList();
         try (BufferedReader br = new BufferedReader(new FileReader(inventoryFilename))) {
@@ -48,12 +48,13 @@ public class Commons {
             while ((line = br.readLine()) != null) {
 
                 String[] itemSplit = line.split(",");
-                String itemName = itemSplit[0].trim().toLowerCase();
-                if (itemSplit.length == 3 && itemCategory.hasItem(itemName)) {
-                    int quantity = Integer.parseInt(itemSplit[1].trim());
-                    double price = Double.parseDouble(itemSplit[2].trim());
+                String categoryName = itemSplit[0].trim().toLowerCase();
+                if (itemSplit.length == 4 ) {
+                    String itemName = itemSplit[1].trim().toLowerCase();
+                    int quantity = Integer.parseInt(itemSplit[2].trim());
+                    double price = Double.parseDouble(itemSplit[3].trim());
 
-                    Item item = new Item(itemName, quantity, price);
+                    Item item = new Item(categoryName, itemName, quantity, price);
                     itemList.add(item);
                 } else {
                     System.out.println("Unable to process line:" + line);
@@ -72,36 +73,36 @@ public class Commons {
         return itemList;
     }
 
-    public static CardList loadOrder(String orderFilename, CategoryLimit categoryLimit, ItemList itemList, ItemCategory itemCategory, String outputFailedFileName) {
+    public static CardList loadOrder(String orderFilename, ItemList itemList, ItemCategory itemCategory, String outputFailedFileName) {
 
         OrderList orderList = new OrderList();
         CardList cardlist = new CardList();
 
-        System.out.println("Reading File:" + orderFilename);
-
+        boolean isFailed = false;
         try (BufferedReader br = new BufferedReader(new FileReader(orderFilename))) {
             String line = br.readLine(); //header
             while ((line = br.readLine()) != null) {
                 String[] itemSplit = line.split(",");
 
-
-                if (itemSplit.length == 4 && itemCategory.hasItem(itemSplit[1].trim().toLowerCase())) {
-                    int orderid = Integer.parseInt(itemSplit[0].trim());
-                    String itemName = itemSplit[1].trim().toLowerCase();
+                int orderid = 1;
+                if (itemSplit.length == 3 && itemCategory.hasItem(itemSplit[0].trim().toLowerCase())) {
+                    String itemName = itemSplit[0].trim().toLowerCase();
                     String category = itemCategory.getCategory(itemName);
-                    int quantity = Integer.parseInt(itemSplit[2].trim());
-                    String card = itemSplit[3].trim();
+                    int quantity = Integer.parseInt(itemSplit[1].trim());
+                    String card = itemSplit[2].trim();
 
                     boolean successOrder = orderList.addOrder(orderid, itemName, category, quantity, itemList);
                     if (successOrder) {
                         cardlist.addCharge(card, quantity * itemList.getCharge(itemName));
                     } else {
+                        isFailed = true;
                         // output to not successful filepath
                         try {
                             BufferedWriter bw= new BufferedWriter(new FileWriter( outputFailedFileName, true));
                             PrintWriter out1 = new PrintWriter(bw);
-
-                            out1.println("Please correct quantities " + quantity + " for orderid: "+ orderid + ", item: " + itemName );
+                            String message = "(Failed item) Unable to process: " + quantity + " quantity for " + itemName + "(Category: " +category + ")";
+                            System.out.println(message);
+                            out1.println(message);
                             out1.flush();
                         } catch (IOException e) {
                             System.out.println("EXCEPTION caught: for deleteIfExists:"+outputFailedFileName);
@@ -112,9 +113,15 @@ public class Commons {
                     System.out.println("Unable to process line:" + line);
                 }
             }
+
+            if(!isFailed) {
+                System.out.println("Congratulations: No failed orders. All order have been processed succesfully! ");
+            }
         } catch (IOException e) {
             System.out.println("EXCEPTION caught: for deleteIfExists:"+orderFilename);
         }
+
+
         return cardlist;
     }
 
@@ -124,10 +131,13 @@ public class Commons {
         try {
             BufferedWriter bw= new BufferedWriter(new FileWriter( cardChargedfileName, true));
             PrintWriter out1 = new PrintWriter(bw);
-
-            out1.println("CardNumber,AmountCharged");
+            String message = "CardNumber,AmountCharged";
+            System.out.println(message);
+            out1.println(message);
             for(Map.Entry<String,Double> cardamount: card.getCardlist().entrySet() ) {
-                out1.println(cardamount.getKey() + ",$" + df.format(cardamount.getValue()));
+                message = cardamount.getKey() + ",$" + df.format(cardamount.getValue());
+                System.out.println(message);
+                out1.println(message);
                 out1.flush();
             }
         } catch (IOException e) {

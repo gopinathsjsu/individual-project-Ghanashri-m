@@ -1,14 +1,27 @@
 package com.project.item;
 
 public class Item {
+    private String categoryName;
     private String itemName;
     private int quantity;
     private double price;
 
-    public Item(String itemName, int quantity, double price) {
+    public Item() {
+    }
+
+    public Item(String categoryName, String itemName, int quantity, double price) {
+        this.categoryName = categoryName;
         this.itemName = itemName;
         this.quantity = quantity;
         this.price = price;
+    }
+
+    public String getCategoryName() {
+        return categoryName;
+    }
+
+    public void setCategoryName(String categoryName) {
+        this.categoryName = categoryName;
     }
 
     public String getItemName() {
