@@ -12,6 +12,16 @@ INSTRUCTIONS TO RUN PROGRAM:
   Output Snapshots
 1. With Input File 1
    
+   <img width="1440" alt="Screen Shot 2021-12-05 at 2 57 03 PM" src="https://user-images.githubusercontent.com/39545809/144767510-90a255bf-bbec-45f2-aa7e-688520676e2c.png">
+
+   
+2. With Input File 2
+   
+   <img width="1440" alt="Screen Shot 2021-12-05 at 2 58 21 PM" src="https://user-images.githubusercontent.com/39545809/144767504-809472cd-9707-4715-b813-a0c65ea31a0c.png">
+
+3. With Input File 3
+   
+   
    <img width="1440" alt="Screen Shot 2021-12-05 at 2 58 42 PM" src="https://user-images.githubusercontent.com/39545809/144767475-ecfe675f-7367-4ccb-bf9a-9258e04e618b.png">
 
 
