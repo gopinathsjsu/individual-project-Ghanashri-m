@@ -1,0 +1,17 @@
+[
+  {
+    "categoryName":"Essentials",
+    "items":["Clothes", "Soap", "Milk"],
+    "limit":3
+  },
+  {
+    "categoryName":"Luxury",
+    "items":["Perfume","Chocolates"],
+    "limit":4
+  },
+  {
+    "categoryName":"Misc",
+    "items":["Bedsheet","Footwear"],
+    "limit":6
+  }
+]
