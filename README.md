@@ -1,3 +1,15 @@
+
+INSTRUCTIONS TO RUN PROGRAM:
+
+1. CLone the project / Download the jar file - ghanashri_project.jar  in the home location
+2. Run the command:
+   java -cp ghanashri_project.jar MainClass <INPUT FILENAME>
+3. Sample Input:
+   java -cp ghanashri_project.jar MainClass "Input1 - Sheet1.csv"
+
+
+
+****************
 Design and implement a Java application for the following requirements. You may choose up to 3 design patterns. Include a class diagram for your design. All submissions should be committed to the assigned Github repo. Please include a README file with instructions on how to build and run your application.
 
 Requirements:

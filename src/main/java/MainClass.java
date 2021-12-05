@@ -20,6 +20,7 @@ public class MainClass {
         if("null".equals(orderFilename) || !Files.isReadable(Paths.get(orderFilename)) )
         {
             System.out.println("No such readable file exists on project path:"+orderFilename);
+            System.exit(1);
         }
         String failedoutput= outputFailedFileName + "_"+ orderFilename;
         String cardCharged= cardChargedFileName + "_"+ orderFilename;
