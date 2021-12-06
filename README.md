@@ -31,21 +31,21 @@ INSTRUCTIONS TO RUN PROGRAM:
    
    <img width="1440" alt="Screen Shot 2021-12-05 at 2 57 03 PM" src="https://user-images.githubusercontent.com/39545809/144767510-90a255bf-bbec-45f2-aa7e-688520676e2c.png">
    
-   The Order is successfully placed
+   <h2>The Order is successfully placed. No failed order file is generated.</h2>
 
    
 2. With Input File 2
    
    <img width="1440" alt="Screen Shot 2021-12-05 at 2 58 21 PM" src="https://user-images.githubusercontent.com/39545809/144767504-809472cd-9707-4715-b813-a0c65ea31a0c.png">
    
-   The order quantity for oil is more than the limit, so order placement fails for the item with exceeding quantity, where as card will be charged for other items.
+   <h2>The order quantity for oil is more than the limit, so order placement fails for the item with exceeding quantity, where as card will be charged for other </h2>items.
 
 3. With Input File 3
    
    
    <img width="1440" alt="Screen Shot 2021-12-05 at 2 58 42 PM" src="https://user-images.githubusercontent.com/39545809/144767475-ecfe675f-7367-4ccb-bf9a-9258e04e618b.png">
    
-   Order placement is successfull
+   <h2>Order placement is successfull. No failed order file is generated.</h2>
    
 4. Intermediate Screen shots
 
