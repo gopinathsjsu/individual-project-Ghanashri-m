@@ -1,12 +1,12 @@
 
 INSTRUCTIONS TO RUN PROGRAM:
 
-1. CLone the project / Download the jar file - ghanashri_project.jar  in the home location
+1. CLone the project / Download the jar file - ghanashri_project.jar  in the home location <br/>
  (If running jar file)
 3. Run the command:
    java -cp ghanashri_project.jar MainClass INPUT FILENAME
 3. Sample Input:
-   java -cp ghanashri_project.jar MainClass "Input1 - Sheet1.csv"
+   java -cp ghanashri_project.jar MainClass "Input1 - Sheet1.csv" <br/>
   (If Cloning repositary and running)
   Select Run -> Edit configuration -> provide the input file as shown below -> okay -> click run button (green play kind of icon)
   
