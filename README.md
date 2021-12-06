@@ -14,11 +14,11 @@ INSTRUCTIONS TO RUN PROGRAM:
    
 Design Patterns Used
    
-   1. Chain of responsibility.
+   1. <b>Chain of responsibility.</b><br/>
       For the functionality to process orders with a chain of handlers (for example, reading the input file first, mapping the item in each category with item list, then check if the order quantity is exceeding the individual item limit, followed by checking if it exceeds category limit, then based on this generate order placement - success or failure output) 
-   2. Iterator
+   2. <b>Iterator</b><br/>
       For the functionality to take item for each category and map it with item list.
-   3. Singleton
+   3. <b>Singleton</b><br/>
       For the functionality of reading input file from command line.
    
 *************
