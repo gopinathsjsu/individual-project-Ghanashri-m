@@ -8,7 +8,7 @@ INSTRUCTIONS TO RUN PROGRAM:
    java -cp ghanashri_project.jar MainClass INPUT FILENAME
 3. Sample Input:
    java -cp ghanashri_project.jar MainClass "Input1 - Sheet1.csv" <br/><br/>
-  (If Cloning repositary and running)<br/>
+  (If Cloning repositary and running)<br/><br/>
   Select Run -> Edit configuration -> provide the input file as shown below -> okay -> click run button (green play kind of icon)
   
   <img width="1046" alt="Screen Shot 2021-12-05 at 6 28 42 PM" src="https://user-images.githubusercontent.com/39545809/144777679-137bc8f0-bcb3-4544-8104-9ae5bc6d1110.png">
