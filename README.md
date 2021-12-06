@@ -6,6 +6,9 @@ INSTRUCTIONS TO RUN PROGRAM:
    java -cp ghanashri_project.jar MainClass INPUT FILENAME
 3. Sample Input:
    java -cp ghanashri_project.jar MainClass "Input1 - Sheet1.csv"
+4. Failed orders are written to a newly generated file failedOrders_<INPUT FILE NAME>
+5. Upon successfull completion, the card charged data is written to newly generated cardCharged_<INPUT FILE NAME>
+6. The output is visible in the terminal aswell.
    
    
 *************
@@ -13,16 +16,22 @@ INSTRUCTIONS TO RUN PROGRAM:
 1. With Input File 1
    
    <img width="1440" alt="Screen Shot 2021-12-05 at 2 57 03 PM" src="https://user-images.githubusercontent.com/39545809/144767510-90a255bf-bbec-45f2-aa7e-688520676e2c.png">
+   
+   The Order is successfully placed
 
    
 2. With Input File 2
    
    <img width="1440" alt="Screen Shot 2021-12-05 at 2 58 21 PM" src="https://user-images.githubusercontent.com/39545809/144767504-809472cd-9707-4715-b813-a0c65ea31a0c.png">
+   
+   The quantity is more, so order placement fails for the item with exceeding quantity
 
 3. With Input File 3
    
    
    <img width="1440" alt="Screen Shot 2021-12-05 at 2 58 42 PM" src="https://user-images.githubusercontent.com/39545809/144767475-ecfe675f-7367-4ccb-bf9a-9258e04e618b.png">
+   
+   Order placement is successfull
    
 Class Diagram for the individual project
    
