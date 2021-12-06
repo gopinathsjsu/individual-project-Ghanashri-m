@@ -48,6 +48,7 @@ INSTRUCTIONS TO RUN PROGRAM:
    Order placement is successfull
    
 <h3> Class Diagram for the individual project </h3>
+The class diagram is included in the code repositary aswell
    
    ![IndividualProjectClassDiagram](https://user-images.githubusercontent.com/39545809/144769341-79cb669d-fcbb-4848-9f54-f4f4ee5ff2ef.jpg)
 
