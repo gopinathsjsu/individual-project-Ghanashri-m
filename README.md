@@ -25,7 +25,8 @@ Design Patterns Used
    
   Cap Limits Provided: Luxury : 3, Essentials : 5, Misc : 6
    
-  Output Snapshots
+  <h3>Output Snapshots</h3>
+  
 1. With Input File 1
    
    <img width="1440" alt="Screen Shot 2021-12-05 at 2 57 03 PM" src="https://user-images.githubusercontent.com/39545809/144767510-90a255bf-bbec-45f2-aa7e-688520676e2c.png">
@@ -46,13 +47,15 @@ Design Patterns Used
    
    Order placement is successfull
    
-Class Diagram for the individual project
+<h3> Class Diagram for the individual project </h3>
    
    ![IndividualProjectClassDiagram](https://user-images.githubusercontent.com/39545809/144769341-79cb669d-fcbb-4848-9f54-f4f4ee5ff2ef.jpg)
 
 
 
 ****************
+<h2>Problem Statement</h2>
+
 Design and implement a Java application for the following requirements. You may choose up to 3 design patterns. Include a class diagram for your design. All submissions should be committed to the assigned Github repo. Please include a README file with instructions on how to build and run your application.
 
 Requirements:
