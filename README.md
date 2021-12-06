@@ -12,7 +12,7 @@ INSTRUCTIONS TO RUN PROGRAM:
    
 ************
    
-Design Patterns Used
+<h3>Design Patterns Used</h3>
    
    1. <h5>Chain of responsibility.</h5><br/>
       For the functionality to process orders with a chain of handlers (for example, reading the input file first, mapping the item in each category with item list, then check if the order quantity is exceeding the individual item limit, followed by checking if it exceeds category limit, then based on this generate order placement - success or failure output) 
