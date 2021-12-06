@@ -10,8 +10,21 @@ INSTRUCTIONS TO RUN PROGRAM:
 5. Upon successfull completion, the card charged data is written to newly generated cardCharged_<INPUT FILE NAME>
 6. The output is visible in the terminal aswell.
    
+************
+   
+Design Patterns Used
+   
+   1. Chain of responsibility.
+      For the functionality to process orders with a chain of handlers (for example, reading the input file first, mapping the item in each category with item list, then check if the order quantity is exceeding the individual item limit, followed by checking if it exceeds category limit, then based on this generate order placement - success or failure output) 
+   2. Iterator
+      For the functionality to take item for each category and map it with item list.
+   3. Singleton
+      For the functionality of reading input file from command line.
    
 *************
+   
+  Cap Limits Provided: Luxury : 3, Essentials : 5, Misc : 6
+   
   Output Snapshots
 1. With Input File 1
    
