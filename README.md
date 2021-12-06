@@ -6,8 +6,8 @@ INSTRUCTIONS TO RUN PROGRAM:
    java -cp ghanashri_project.jar MainClass INPUT FILENAME
 3. Sample Input:
    java -cp ghanashri_project.jar MainClass "Input1 - Sheet1.csv"
-4. Failed orders are written to a newly generated file failedOrders_<INPUT FILE NAME>
-5. Upon successfull completion, the card charged data is written to newly generated cardCharged_<INPUT FILE NAME>
+4. Failed orders are written to a newly generated file failedOrders_INPUT FILE NAME
+5. Upon successfull completion, the card charged data is written to newly generated cardCharged_INPUT FILE NAME
 6. The output is visible in the terminal aswell.
    
 ************
