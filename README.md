@@ -24,7 +24,7 @@ INSTRUCTIONS TO RUN PROGRAM:
    
    <img width="1440" alt="Screen Shot 2021-12-05 at 2 58 21 PM" src="https://user-images.githubusercontent.com/39545809/144767504-809472cd-9707-4715-b813-a0c65ea31a0c.png">
    
-   The quantity is more, so order placement fails for the item with exceeding quantity
+   The order quantity for milk is more than the limit, so order placement fails for the item with exceeding quantity, where as card will be charged for other items.
 
 3. With Input File 3
    
