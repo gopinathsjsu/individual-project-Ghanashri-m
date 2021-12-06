@@ -3,7 +3,7 @@ INSTRUCTIONS TO RUN PROGRAM:
 
 1. CLone the project / Download the jar file - ghanashri_project.jar  in the home location
 2. Run the command:
-   java -cp ghanashri_project.jar MainClass <INPUT FILENAME>
+   java -cp ghanashri_project.jar MainClass INPUT FILENAME
 3. Sample Input:
    java -cp ghanashri_project.jar MainClass "Input1 - Sheet1.csv"
    
