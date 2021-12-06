@@ -47,6 +47,26 @@ INSTRUCTIONS TO RUN PROGRAM:
    
    Order placement is successfull
    
+4. Intermediate Screen shots
+
+card charged for input file 1
+
+<img width="1440" alt="Screen Shot 2021-12-05 at 5 30 10 PM" src="https://user-images.githubusercontent.com/39545809/144773605-4e58ac0e-9f5d-47c5-bdbb-6f9580a25fc8.png">
+
+card charged for input file 2
+
+<img width="1440" alt="Screen Shot 2021-12-05 at 5 31 54 PM" src="https://user-images.githubusercontent.com/39545809/144773690-516805bc-b660-49eb-b384-dd303dbe292f.png">
+
+
+failed Orders for input file
+
+<img width="1440" alt="Screen Shot 2021-12-05 at 5 32 05 PM" src="https://user-images.githubusercontent.com/39545809/144773701-4c21143d-12dd-40dc-874e-48c92779bbe5.png">
+
+
+card charged for input file 3
+
+   <img width="1440" alt="Screen Shot 2021-12-05 at 5 32 33 PM" src="https://user-images.githubusercontent.com/39545809/144773754-5372d4d4-23a9-4bf9-ac34-34bdcf4e83a5.png">
+
 <h3> Class Diagram for the individual project </h3>
 The class diagram is included in the code repositary aswell
    
